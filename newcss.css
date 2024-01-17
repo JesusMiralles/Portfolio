@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuracion del header*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #283747;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#burger-icon{
+  margin: auto 0;
+  display: none;
+  cursor: context-menu;
+}
+#burger-icon div{
+  width: 35px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.6s;
+}
+.open .bar1{transform: rotate(-45deg) translate(-6px,6px);}
+.open .bar2{opacity: 0;}
+.open .bar3{transform: rotate(45deg) translate(-6px,-7px);}
+
+.open .mobile-menu{
+  display: flex;
+  flex-direction:column;
+  justify-content:right
+}
+
+.mobile-menu{
+  display: none;
+  position:absolute;
+  top: 100px;
+  padding: 15px;
+  right: 0;
+  width: 250px;
+  margin-top: 0px;
+  background-color:#283747;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding-top: 70px;
+}
+
+
+/* Configuracion del Nav*/
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+  color: #db347f; /* Cambia esto al color deseado para la entrada activa */
+  font-weight: bold; /* O aplica otros estilos según tu preferencia */
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+/* Descargar CV*/
+#download-btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a5281;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#download-btn a:hover {
+  background-color: #236895;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Configuracion y estilos de las cajas de separacion */
+section {
+  padding: 40px;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #3498db;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+section p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+/* Seccion de Contacto*/
+section#contact a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+/* Configuracion del Footer */
+footer {
+  background-color: #283747;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Iconos del Footer*/
+.icon {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.icon span {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
+  transition: 0.4s ease;
+}
+
+.icon span i {
+  line-height: 50px;
+  font-size: 20px;
+  color: #333;
+  transition: 0.5s;
+}
+
+.icon:hover span {
+  background: #3498db;
+}
+
+.icon:hover span,
+.icon:hover i {
+  color: #fff;
+}
+
+
+/* Estilos para pantallas mayores a 870px */
+@media screen and (min-width: 871px) {
+  /* Ocultar el nav responsivo */
+  nav .navbar {
+    display: none;
+  }
+
+  /* Mostrar el nav principal */
+  nav ul {
+    display: flex;
+    list-style: none; /* Elimina los puntos de la lista */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+  }
+
+  nav li {
+    margin-right: 10px; /* Espacio entre elementos del nav */
+  }
+}
+
+/* Estilos para pantallas de 870px o menos */
+@media screen and (max-width: 870px) {
+  /* Ocultar el nav principal */
+  nav ul {
+    display: none;
+  }
+
+  /* Mostrar el nav responsivo */
+  #burger-icon {
+    display: block;
+  }
+}

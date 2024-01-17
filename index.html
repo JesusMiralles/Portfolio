@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="newcss.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jesús Miralles Corachan</title>
+    <script src="C:/Users/Usuario/Desktop/PORTFOLIO/newjavascript.js"></script>
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div id="brand">
+            <h1>Jesús Miralles</h1>
+            <p>Desarollador de Software</p>
+
+        </div>
+        <nav>
+            <ul>
+
+                <li id="download-btn"><a
+                        href="https://drive.google.com/file/d/1BNRvmuNWP_LsBgczebfCtub4lB-eic0Y/view?usp=sharing"
+                        download="Curriculum Jesus.pdf">Descargar CV</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#experience">Estudios</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <!--Menu responsivo 3rallitas-->
+
+            <div id="burger-icon" onclick="toggleMenu(this);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+                <ul class="mobile-menu">
+                    <li id="download-btn"><a
+                            href="https://drive.google.com/file/d/1BNRvmuNWP_LsBgczebfCtub4lB-eic0Y/view?usp=sharing"
+                            download="Curriculum Jesus.pdf">Descargar CV</a></li>
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#experience">Estudios</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <br><br><br>
+    <main>
+        <section id="about" class="section">
+            <div class="contenedor-main">
+                <div class="h">
+                    <h2>Sobre Mi</h2>
+                </div>
+                <div class="s">
+                    <p>
+
+                        Soy un apasionado del ámbito tecnológico, cerca de ser graduado en el ciclo superior de
+                        Desarrollo de Aplicaciones Multiplataforma (DAM). Esta formación me proporciona una base en
+                        programación, diseño de software y web a demas de gestión de bases de datos. Soy una persona
+                        motivada, creativa y dispuesto a aprender y enfrentar nuevos retos.
+                        <br>
+                        Durante mis estudios, he adquirido habilidades prácticas en el desarrollo de aplicaciones web y
+                        mobiles,con tecnologias como : Bases de datos (Php Myadmin, Oracle) Programación (Java, PHP,
+                        JavaScript) Lenguajes de marcas (HTML,CSS, XML).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="contenedor-main">
+                <div class="h">
+                    <h2>Estudios</h2>
+                </div>
+                <div class="s">
+                    <p><b>Grado medio y superior </b></p>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tecnico en Sistemas Micro informaticos y Redes </th>
+                                <th scope="col">Tecnico Superior en Desarollo de Aplicaciones Multiplataforma</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>Montaje y mantenimiento de equipos </td>
+                                <td>Bases de Datos (Php Myadmin, Oracle)</td>
+                            </tr>
+                            <tr>
+                                <td>Aplicaciones ofimáticas (Word, Excel, PowerPoint)</td>
+                                <td>Programación: Java, PHP, JavaScript, Kotlin</td>
+                            </tr>
+                            <tr>
+                                <td>Sistemas operativos (Maquinas Virtuales)</td>
+                                <td>Lenguajes de marcas (HTML,CSS, XML)</td>
+                            </tr>
+                            <tr>
+                                <td>Redes locales: Protocolos, Redes mixtas, Tipos de redes</td>
+                                <td>Acceso a datos, Programación de Servicios y Procesos</td>
+                            </tr>
+                            <tr>
+                                <td>Sistemas operativos monopuesto</td>
+                                <td>Sistemas informáticos (VirtualBox, Docker), Entornos de Dasarollo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section">
+            <div class="contenedor-main">
+                <div class="h">
+                    <h2>Tecnologias</h2>
+                </div>
+                <div class="s">
+                    <p>Tengo experiencia en diversas tecnologías web. Mis conocimientos de frontend utilizando HTML, CSS
+                        y XML para crear interfaces atractivas y funcionales. Poseo habilidades intermedias en Java y
+                        PHP, lo que me permite trabajar en el desarrollo de aplicaciones tanto en el lado del cliente
+                        como del servidor.<br>
+                        Aunque mis conocimientos en Kotlin y JavaScript son de nivel medio a bajo, estoy expandiendo mis
+                        conocimientos y habilidades. Estoy empleando tiempo en aprender React Native. Además, tengo un
+                        nivel medio en la administración de bases de datos, trabajando con PhpMyAdmin y Oracle para
+                        gestionar eficientemente los datos en proyectos web.</p>
+                </div>
+
+                <!--BOOSTRAP uso boton-->
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Mas Tecnologias
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>
+                            Mi experiencia abarca más allá del desarrollo básico, ya que estoy empezando a utilizar e
+                            implementar <b>APIs, librerias y documentaciones</b> para potenciar mis proyectos. Voy
+                            implementando <b>Bootstrap</b> para el diseño frontend, aprovechando sus ventajas.
+                            <br><br>
+                            En el ámbito del desarrollo backend, me gustaría empezar a trabajar con habilidades como:
+                            <b>Spring y Spring Boot</b> .Mi enfoque no se limita solo a escribir código, sino a utilizar
+                            tecnologías que me ayudan a optimizar y mejorar mi código.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--fin boostrap-->
+
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="contenedor-main">
+                <div class="h">
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="s">
+                    <p><b>Applicacion web</b><br>Creacion de una pagina web completa con todo el tipo de tecnologias y
+                        conocimientos que tengo.
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 45%"></div>
+                    </div><br>
+                    <b>Aplicion Movil</b><br>Aplicacion hibrida para dispositivos moviles.
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 7%"></div>
+                    </div><br>
+                    <b>Tienda online</b><br>Desarollo de una tienda online con todo tipo de funcionalidad.
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div><br>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="contenedor-main">
+                <div class="h">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="s">
+                    <p>Puedes contactarme aquí: <b>jesus.mirallescor@gmail.com</b><br>
+                        Conecta conmigo en LinkedIn: <a
+                            href="https://www.linkedin.com/in/jes%C3%BAs-miralles-corachan-012a6a21b/"
+                            target="_blank"><b>Mi perfil de LinkedIn</b></a><br>
+                        Sígueme en GitHub: <a href="https://github.com/JesusMiralles"><b>Mi perfil de GitHub</b></a></p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <a href="https://www.linkedin.com/in/jes%C3%BAs-miralles-corachan-012a6a21b/" target="_blank"
+                class="icon linkedin">
+                <span><i class="ri-linkedin-box-fill"></i></span>
+            </a>
+            <a href="https://github.com/JesusMiralles" target="_blank" class="icon github">
+                <span><i class="ri-github-fill"></i></span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
