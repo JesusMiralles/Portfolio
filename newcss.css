@@ -15,41 +15,58 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; 
+  z-index: 1000;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#burger-icon{
+div#burger-icon {
+  list-style: none;
+}
+
+#burger-icon {
   margin: auto 0;
   display: none;
   cursor: context-menu;
+  padding-bottom: 10px;
 }
-#burger-icon div{
+
+#burger-icon div {
   width: 35px;
   height: 3px;
   background-color: rgb(255, 255, 255);
-  margin: 6px 0;
+  margin: 6px 0px;
   transition: 0.6s;
+  
 }
-.open .bar1{transform: rotate(-45deg) translate(-6px,6px);}
-.open .bar2{opacity: 0;}
-.open .bar3{transform: rotate(45deg) translate(-6px,-7px);}
 
-.open .mobile-menu{
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.open .mobile-menu {
   display: flex;
-  flex-direction:column;
-  justify-content:right
+  flex-direction: column;
+  justify-content: right
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
-  position:absolute;
+  position: absolute;
   top: 100px;
   padding: 15px;
   right: 0;
-  width: 250px;
+  width: 280px;
+  height: 155px;
   margin-top: 0px;
-  background-color:#283747;
+  background-color: #283747;
 }
 
 body {
@@ -85,16 +102,21 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav ul li a.active {
-  color: #db347f; /* Cambia esto al color deseado para la entrada activa */
-  font-weight: bold; /* O aplica otros estilos según tu preferencia */
-}
 
 nav a:hover {
   color: #3498db;
 }
 
 /* Descargar CV*/
+.general {
+  list-style: none;
+}
+
+#download-btn {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
 #download-btn a {
   display: inline-block;
   padding: 10px 20px;
@@ -194,6 +216,7 @@ footer {
 
 /* Estilos para pantallas mayores a 870px */
 @media screen and (min-width: 871px) {
+
   /* Ocultar el nav responsivo */
   nav .navbar {
     display: none;
@@ -202,20 +225,28 @@ footer {
   /* Mostrar el nav principal */
   nav ul {
     display: flex;
-    list-style: none; /* Elimina los puntos de la lista */
-    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    justify-content: space-between;
+    /* Distribuye los elementos de manera uniforme */
+    padding: 0;
+    /* Elimina el relleno predeterminado de la lista */
   }
 
   nav li {
-    margin-right: 10px; /* Espacio entre elementos del nav */
+    margin-right: 10px;
+    /* Espacio entre elementos del nav */
   }
 }
 
 /* Estilos para pantallas de 870px o menos */
 @media screen and (max-width: 870px) {
+
   /* Ocultar el nav principal */
   nav ul {
+    display: none;
+  }
+  .general {
     display: none;
   }
 
