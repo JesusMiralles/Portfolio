@@ -1,4 +1,3 @@
-
 // js para manejar el menú hamburguesa
 document.addEventListener('DOMContentLoaded', function () {
   const burgerIcon = document.getElementById('burger-icon');
@@ -8,4 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.toggle('open');
     mobileMenu.classList.toggle('open');
   });
-});    
+});
